@@ -49,4 +49,8 @@ public class BibliotecaService {
         }
         return respuesta;
     }
+    //Buscar id
+    public Biblioteca buscarPorId(Long id){
+        return repo.findById(id).orElse(null);
+}
 }

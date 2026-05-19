@@ -44,5 +44,8 @@ public class AmigosController {
     public Amigos actualizar(@PathVariable Long id, @RequestBody Amigos amigo) {
     return serv.actualizar(id, amigo);
 }
-
+    @GetMapping("/{id}")
+    public Amigos buscar(@PathVariable Long id){
+        return serv.buscarPorId(id);
+}
 }

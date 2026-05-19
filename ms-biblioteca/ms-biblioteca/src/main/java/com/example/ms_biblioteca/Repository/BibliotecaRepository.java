@@ -8,7 +8,6 @@ import com.example.ms_biblioteca.Model.Biblioteca;
 
 
 public interface BibliotecaRepository extends JpaRepository<Biblioteca, Long>{
-
     List<Biblioteca> findByInstalado(boolean instalado);
 
 }

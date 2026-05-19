@@ -40,4 +40,8 @@ public class NotificacionController {
     public String eliminarNotificacion(@PathVariable Long id) {
         return service.eliminarNotificacion(id);
     }
+    @GetMapping("/{id}")
+    public Notificacion buscar(@PathVariable Long id){
+        return service.buscarPorId(id);
+}
 }

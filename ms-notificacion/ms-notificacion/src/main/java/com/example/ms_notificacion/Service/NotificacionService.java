@@ -32,5 +32,8 @@ public class NotificacionService {
 
         return "Notificacion eliminada";
     }
+    public Notificacion buscarPorId(Long id){
+        return repo.findById(id).orElse(null);
+}
 
 }

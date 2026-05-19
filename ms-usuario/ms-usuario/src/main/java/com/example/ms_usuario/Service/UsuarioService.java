@@ -32,6 +32,10 @@ public class UsuarioService {
     Map<String, Object> respuesta = new HashMap<>();
     if(usuario != null){
 
+        System.out.println(usuario.getIdBiblioteca());
+        System.out.println(usuario.getIdAmigos());
+        System.out.println(usuario.getIdNotificacion());
+        
         BibliotecaDTO biblioteca = bibliotecaClient.obtenerBiblioteca(usuario.getIdBiblioteca());
         AmigosDTO amigos = amigosClient.obtenerAmigos(usuario.getIdAmigos());
         NotificacionDTO notificacion = notificacionClient.obtenerNotificacion(usuario.getIdNotificacion());

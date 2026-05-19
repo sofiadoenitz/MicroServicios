@@ -32,5 +32,8 @@ public class AmigosService {
         amigos.setEstado(amigoActualizado.getEstado());
         return repo.save(amigos);
     }
+    public Amigos buscarPorId(Long id){
+        return repo.findById(id).orElse(null);
+}
 
 }

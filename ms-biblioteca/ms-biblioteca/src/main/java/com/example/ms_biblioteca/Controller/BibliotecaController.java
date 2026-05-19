@@ -44,5 +44,9 @@ public class BibliotecaController {
     public Map<String, Object> completa(@PathVariable Long id){
         return serv.obtenerBibliotecaCompleta(id);
     }
+    @GetMapping("/{id}")
+    public Biblioteca buscar(@PathVariable Long id){
+        return serv.buscarPorId(id);
+}
 
 }

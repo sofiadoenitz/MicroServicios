@@ -11,6 +11,6 @@ import com.example.ms_usuario.Model.DTO.NotificacionDTO;
     url = "http://localhost:8090"
 )
 public interface NotificacionFeignClient {
-    @GetMapping("/api/v1/notificacion/usuario/{id}")
+    @GetMapping("/api/v1/notificaciones/usuario/{id}")
     NotificacionDTO obtenerNotificacion(@PathVariable Long id);
 }
