@@ -1,7 +1,7 @@
 # MicroServicios
 Plataforma de videojuegos desarrollada con arquitectura de microservicios usando Spring Boot.
 
-El sistema permite gestionar usuarios, juegos, biblioteca, pagos, descuentos, catálogo, mods, amigos, notificaciones y facturación. Cada microservicio funciona de manera independiente y se comunica mediante Feign Client, permitiendo una estructura escalable, modular y fácil de mantener.
+El sistema permite gestionar usuarios, juegos, biblioteca, pagos, descuentos, catálogo, mods, amigos, notificaciones y facturación. Cada microservicio funciona de manera independiente y se comunica mediante Feign Client, permitiendo una estructura escalable, modular y fácil de mantener. Este trabajo fue creado por Sofia Doenitz, Noelia Maldonado y Matias Rojas
 
 Tecnologías utilizadas:
 - Java
